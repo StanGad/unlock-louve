@@ -93,7 +93,8 @@ function openCard() {
 
         <img
             src="${card.image}"
-            style="max-width:100%; border-radius:15px;">
+            class="card-image"
+            onclick="openImage('${card.image}')">
 
         <p>${card.text}</p>
     `;
@@ -142,4 +143,56 @@ function openHistoryCard(number) {
     openCard();
 
 }
+
+function openImage(src){
+
+    const modal =
+    document.getElementById("image-modal");
+
+    const image =
+    document.getElementById("modal-image");
+
+
+    image.src = src;
+
+    modal.style.display="flex";
+
+}
+
+
+
+function closeImage(){
+
+    document
+    .getElementById("image-modal")
+    .style.display="none";
+
+}
+
+
+
+document
+.getElementById("close-modal")
+.addEventListener(
+"click",
+closeImage
+);
+
+
+
+// clic sur le fond pour fermer
+
+document
+.getElementById("image-modal")
+.addEventListener(
+"click",
+(e)=>{
+
+    if(e.target.id === "image-modal"){
+
+        closeImage();
+
+    }
+
+});
 
