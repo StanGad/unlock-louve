@@ -1,6 +1,7 @@
-// Chargement du jeu
+document.addEventListener("DOMContentLoaded", async () => {
 
-document
+
+    document
     .getElementById("startMission")
     .addEventListener(
         "click",
@@ -8,40 +9,39 @@ document
     );
 
 
+    document
+    .getElementById("validate")
+    .addEventListener(
+        "click",
+        openCard
+    );
+
+
+});
+
+
+
 async function startMission(){
 
-    // cacher accueil
+
     document
     .getElementById("home")
     .classList.add("hidden");
 
 
-    // afficher jeu
     document
     .getElementById("game")
     .classList.remove("hidden");
 
 
-    // lancer chrono
     startTimer();
 
 
-    // charger les cartes
     await loadCards();
 
 
 }
 
-
-
-// bouton ouvrir carte
-
-document
-.getElementById("validate")
-.addEventListener(
-    "click",
-    openCard
-);
 
 
 
@@ -52,6 +52,7 @@ function openCard(){
     document
     .getElementById("number")
     .value;
+
 
 
     let card =
@@ -69,13 +70,8 @@ function openCard(){
 
 
         content.innerHTML =
-
         `
         <h2>❌ Carte inconnue</h2>
-
-        <p>
-        Ce numéro ne correspond à aucune carte.
-        </p>
         `;
 
 
@@ -93,7 +89,6 @@ function openCard(){
     <img 
     src="${card.image}"
     style="max-width:100%; border-radius:15px;">
-
 
     <p>
     ${card.text}
