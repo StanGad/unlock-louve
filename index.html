@@ -2,37 +2,125 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Unlock Louve</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+<title>Unlock Louve</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
 
 
-<div class="game">
-
-    <h1>🔐 Unlock Louve</h1>
-
-    <p>
-        Une aventure secrète commence...
-    </p>
+<div class="container">
 
 
-    <button id="start">
-        Commencer la mission
-    </button>
+<!-- ECRAN ACCUEIL -->
+
+<div id="home">
+
+
+<h1>
+🔐 Unlock Louve
+</h1>
+
+
+<h2>
+Mission secrète
+</h2>
+
+
+<p class="intro">
+
+Une aventure spéciale t'attend.
+
+Des souvenirs ont disparu...
+Des indices sont cachés...
+À toi de résoudre les énigmes pour retrouver la vérité.
+
+</p>
+
+
+<button id="startMission">
+
+Commencer la mission 🚀
+
+</button>
 
 
 </div>
 
 
 
+
+<!-- ECRAN JEU -->
+
+<div id="game" class="hidden">
+
+
+<h1>
+🔎 Enquête en cours
+</h1>
+
+
+<div class="timer">
+
+⏱
+<span id="timer">
+60:00
+</span>
+
+</div>
+
+
+
+<div class="decoder">
+
+
+<input 
+id="number"
+placeholder="Numéro de carte">
+
+
+<button id="validate">
+
+Ouvrir
+
+</button>
+
+
+</div>
+
+
+
+<div id="content">
+
+
+<p>
+Entre un numéro pour continuer...
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="js/cards.js"></script>
+<script src="js/timer.js"></script>
 <script src="js/app.js"></script>
+
 
 </body>
 
