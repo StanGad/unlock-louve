@@ -1,0 +1,57 @@
+body {
+
+    background:#121212;
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+.game {
+
+    text-align:center;
+
+    background:#222;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    width:400px;
+
+}
+
+
+
+h1 {
+
+    font-size:40px;
+
+}
+
+
+
+button {
+
+
+    background:#c9a45c;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
