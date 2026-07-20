@@ -90,6 +90,14 @@
         "text":"Pardon ???",
         "image":"assets/images/28.png"
         },
+    
+    {
+        "id":"30",
+        "title":"Carte 30",
+        "text":"Monsieur semble commencer à retrouver la memoire",
+        "image":"assets/images/30.png"
+        },
+        
     {
         "id":"32",
         "title":"Carte 32",
@@ -211,6 +219,13 @@
         "title":"Carte 107",
         "text":"Quel bel endroit, mais ou ponvosn nous nous assoir ??",
         "image":"assets/images/107.png"
+        },
+    
+    {
+        "id":"108",
+        "title":"Carte 108",
+        "text":"Bon c'est finalemnt Monsieur qui prefer prendre son temps...",
+        "image":"assets/images/108.png"
         },
 
     {
