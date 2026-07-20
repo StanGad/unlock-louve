@@ -278,3 +278,105 @@
             cursor:pointer;
         
         }
+
+        
+        
+      
+        
+        #brain {
+
+            position:fixed;
+        
+            top:0;
+            left:0;
+            overflow-y: auto;
+        
+            width:100%;
+            height:100%;
+        
+            background:
+            radial-gradient(circle,#442266,#050008);
+        
+            color:white;
+        
+            display:flex;
+        
+            flex-direction:column;
+        
+            justify-content:center;
+        
+            align-items:center;
+        
+            text-align:center;
+        
+            z-index:500;
+        
+        }
+        
+        
+        .memory-card {
+        
+            background:rgba(255,255,255,0.1);
+        
+            padding:30px;
+        
+            border-radius:20px;
+        
+            width:80%;
+            max-width:500px;
+        
+        }
+        
+        
+        
+        .memory-button {
+        
+            margin:10px;
+        
+            padding:15px 25px;
+        
+            border-radius:15px;
+        
+            border:none;
+        
+            cursor:pointer;
+        
+        }
+
+        .word-grid{
+
+            display:grid;
+            
+            grid-template-columns:repeat(15,40px);
+            
+         
+            
+            justify-content:center;
+            
+            }
+            
+            
+            .letter{
+            
+            width:30px;
+            height:30px;
+            
+            background:#222;
+            
+            color:white;
+            
+            border:none;
+            
+            cursor:pointer;
+            
+            }
+            
+            
+            .letter.selected{
+            
+            background:#c9a45c;
+            
+            color:black;
+            
+            }
+      

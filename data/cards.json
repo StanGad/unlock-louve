@@ -26,6 +26,14 @@
         "text":"Il sembla avoir faim mais ou manger ? ",
         "image":"assets/images/7.png"
         },
+
+
+    {
+        "id":"8",
+        "title":"Carte 8",
+        "text":"Oh ca semble fonctionner, on aprpfjce d ela fin non ? ",
+        "image":"assets/images/8.png"
+        },
  
 
     {
@@ -226,6 +234,13 @@
         "title":"Carte 108",
         "text":"Bon c'est finalemnt Monsieur qui prefer prendre son temps...",
         "image":"assets/images/108.png"
+        },
+    
+    {
+        "id":"109",
+        "title":"Carte 109",
+        "text":"Sympa l'endroit non ?? ;)",
+        "image":"assets/images/109.png"
         },
 
     {

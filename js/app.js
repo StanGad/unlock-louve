@@ -59,6 +59,13 @@ function openCard() {
     const number = input.value.trim();
 
     const card = findCard(number);
+    if(number === "180426"){
+
+        enterBrain();
+    
+        return;
+    
+    }
     currentCard = number;
 
     const content = document.getElementById("content");
@@ -144,55 +151,5 @@ function openHistoryCard(number) {
 
 }
 
-function openImage(src){
 
-    const modal =
-    document.getElementById("image-modal");
-
-    const image =
-    document.getElementById("modal-image");
-
-
-    image.src = src;
-
-    modal.style.display="flex";
-
-}
-
-
-
-function closeImage(){
-
-    document
-    .getElementById("image-modal")
-    .style.display="none";
-
-}
-
-
-
-document
-.getElementById("close-modal")
-.addEventListener(
-"click",
-closeImage
-);
-
-
-
-// clic sur le fond pour fermer
-
-document
-.getElementById("image-modal")
-.addEventListener(
-"click",
-(e)=>{
-
-    if(e.target.id === "image-modal"){
-
-        closeImage();
-
-    }
-
-});
 
