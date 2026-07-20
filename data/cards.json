@@ -12,6 +12,20 @@
         "text":"Ahhhh bha d'accord on en est là..., et il a le compte de Louve Wargnier en plus, etrange... ",
         "image":"assets/images/4.png"
         },
+    
+    {
+        "id":"6",
+        "title":"Carte 6",
+        "text":"Bon bon bon, on se dpnne rdv au pingpong donc ?? ",
+        "image":"assets/images/6.png"
+        },
+    
+    {
+        "id":"7",
+        "title":"Carte 7",
+        "text":"Il sembla avoir faim mais ou manger ? ",
+        "image":"assets/images/7.png"
+        },
  
 
     {
@@ -109,6 +123,13 @@
         },
     
     {
+        "id":"38",
+        "title":"Carte 38",
+        "text":"Bah alors madame ???",
+        "image":"assets/images/38.png"
+        },
+    
+    {
         "id":"42",
         "title":"Carte 42",
         "text":"Mouais pas foufou",
@@ -137,10 +158,24 @@
         },
     
     {
+        "id":"100",
+        "title":"Carte 100",
+        "text":"Ah elle veut monter mais elle ne sait pas à quel etage ?",
+        "image":"assets/images/100.png"
+        },
+    
+    {
         "id":"101",
         "title":"Carte 101",
-        "text":"Ah super bar ca...",
+        "text":"Ah super bar ca... il faut peut etre passer à un ednroit ou l'on peut se tenri la main ?",
         "image":"assets/images/101.png"
+        },
+    
+    {
+        "id":"102",
+        "title":"Carte 102",
+        "text":"Aie Aie Aie",
+        "image":"assets/images/102.png"
         },
     
     {
@@ -148,6 +183,27 @@
         "title":"Carte 103",
         "text":"Rien à voir",
         "image":"assets/images/103.png"
+        },
+    
+    {
+        "id":"104",
+        "title":"Carte 104",
+        "text":"Bon meme pas un etit bisous ?? Non ... bon combien de bise ?",
+        "image":"assets/images/104.png"
+        },
+    
+    {
+        "id":"105",
+        "title":"Carte 105",
+        "text":"Bonne idee mais quel menu prend il avec 5 sushi en + ?",
+        "image":"assets/images/105.png"
+        },
+    
+    {
+        "id":"106",
+        "title":"Carte 106",
+        "text":"Secra difference de niveau, l'ecart est enorme?",
+        "image":"assets/images/106.png"
         },
 
     {
