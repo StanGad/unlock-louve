@@ -53,6 +53,38 @@ async function startMission(){
 let history = [];
 let currentCard = null;
 
+document
+.getElementById("startMission")
+.addEventListener("click",()=>{
+
+    const music = document.getElementById("background-music");
+
+    music.volume = 0.3; // volume à 30%
+    music.play();
+
+});
+
+const music = document.getElementById("background-music");
+const button = document.getElementById("sound-toggle");
+
+
+button.onclick = ()=>{
+
+    if(music.paused){
+
+        music.play();
+        button.innerHTML="🔊";
+
+    }
+    else{
+
+        music.pause();
+        button.innerHTML="🔇";
+
+    }
+
+};
+
 function openCard() {
 
     const input = document.getElementById("number");

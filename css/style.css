@@ -1083,3 +1083,34 @@ animation:shake 0.3s;
         cursor:zoom-out;
     
     }
+
+    button{
+
+        margin-top:25px;
+        padding:15px 30px;
+        font-size:15px;
+    
+        border-radius:10px;
+    
+        border:1px solid #c9a45c;
+    
+        cursor:pointer;
+    
+        background:transparent;
+    
+        color:#c9a45c;
+    
+        transition:0.3s;
+    
+    }
+    
+    
+    button:hover{
+    
+        background:#c9a45c;
+    
+        color:#111;
+    
+        transform:scale(1.05);
+    
+    }
