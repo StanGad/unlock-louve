@@ -1,14 +1,12 @@
 function openImage(src){
 
-    const modal =
-    document.getElementById("image-modal");
-
-
-    const image =
-    document.getElementById("modal-image");
-
+    const modal = document.getElementById("image-modal");
+    const image = document.getElementById("modal-image");
 
     image.src = src;
+
+    // reset zoom
+    image.classList.remove("zoom");
 
     modal.style.display="flex";
 
@@ -18,9 +16,12 @@ function openImage(src){
 
 function closeImage(){
 
-    document
-    .getElementById("image-modal")
-    .style.display="none";
+    const modal = document.getElementById("image-modal");
+    const image = document.getElementById("modal-image");
+
+    image.classList.remove("zoom");
+
+    modal.style.display="none";
 
 }
 
@@ -31,30 +32,44 @@ document.addEventListener(
 ()=>{
 
 
-document
-.getElementById("close-modal")
-.addEventListener(
-"click",
-closeImage
-);
+    document
+    .getElementById("close-modal")
+    .addEventListener(
+        "click",
+        closeImage
+    );
 
 
 
-document
-.getElementById("image-modal")
-.addEventListener(
-"click",
-(e)=>{
+    document
+    .getElementById("image-modal")
+    .addEventListener(
+        "click",
+        (e)=>{
+
+            if(e.target.id==="image-modal"){
+
+                closeImage();
+
+            }
+
+        }
+    );
 
 
-if(e.target.id==="image-modal"){
+    // zoom image
+    document
+    .getElementById("modal-image")
+    .addEventListener(
+        "click",
+        (e)=>{
 
-closeImage();
+            e.stopPropagation();
 
-}
+            e.target.classList.toggle("zoom");
 
-
-});
+        }
+    );
 
 
 });
