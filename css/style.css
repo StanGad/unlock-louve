@@ -855,22 +855,30 @@ box-shadow:
 
         .memory-cell{
 
-            width:60px;
-            height:60px;
-            
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            
-            border:2px solid #555;
-            
+            width:50px;
+            height:50px;
+        
+            border-radius:12px;
+        
+            border:2px solid #444;
+        
+            background:#111;
+        
+            color:white;
+        
             font-size:22px;
-            
-            cursor:pointer;
-            
-            margin:5px;
-            
-            }
+        
+            text-align:center;
+        
+            font-weight:bold;
+        
+            text-transform:uppercase;
+        
+            outline:none;
+        
+            transition:0.3s;
+        
+        }
             
             
             .memory-cell.selected{
@@ -1112,5 +1120,57 @@ animation:shake 0.3s;
         color:#111;
     
         transform:scale(1.05);
+    
+    }
+
+    .memory-cell:focus{
+
+        border-color:#00e5ff;
+    
+        box-shadow:0 0 15px #00e5ff;
+    
+    }
+
+    .memory-cell.correct{
+
+        background:#1f9d55;
+    
+        border-color:#52ff8a;
+    
+        box-shadow:0 0 20px #52ff8a;
+    
+    }
+
+    .memory-cell.wrong{
+
+        background:#b91c1c;
+    
+        border-color:#ff5555;
+    
+        box-shadow:0 0 20px #ff5555;
+    
+    }
+
+    #memory-grid{
+
+        display:grid;
+    
+        grid-template-columns:repeat(4,65px);
+    
+        gap:12px;
+    
+        justify-content:center;
+    
+        margin:30px auto;
+    
+    }
+
+    .memory-cell.locked{
+
+        background:#222;
+    
+        color:#aaa;
+    
+        border-color:#555;
     
     }

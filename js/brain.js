@@ -35,12 +35,13 @@ const memoryLevelData = {
 
 solution:[
 
-"A7","3F","72","C9",
-"12","6F","8B","44",
-"FF","21","B2","90"
+"A6","3F","E3","B9",
+"P2","2K","9U","L4",
+"F1","R2","2D","B3"
 
 ],
 
+             
 
 hidden:[
 
@@ -645,10 +646,7 @@ function exitBrain(){
 
                 document.getElementById("challenge").innerHTML=`
                 
-                <h2>
-💾 Reconstruction du noyau mémoire
-</h2>
-
+    
 
 <p>
 Certaines données ont été effacées.<br>
@@ -666,12 +664,9 @@ Replace les bons fragments dans les cases "??".
                 <div id="memory-grid"></div>
                 
                 
-                <h3>
-                Fragments disponibles
-                </h3>
-                
-                
-                <div id="fragments"></div>
+              <p>
+Complète les cases manquantes avec les bons fragments.
+</p>
                 
                 <button class="memory-button" onclick="checkCore()">
 🧠 Reconstruire le noyau
@@ -683,209 +678,108 @@ Replace les bons fragments dans les cases "??".
                 
                 }
 
-function createCore(){
+                function createCore(){
+
+                    const grid = document.getElementById("memory-grid");
+                
+                    grid.innerHTML="";
+                
+                
+                    memoryLevelData.solution.forEach((value,index)=>{
+                
+                
+                        let cell=document.createElement("input");
+                
+                        cell.className="memory-cell";
+                
+                
+                        if(memoryLevelData.hidden.includes(index)){
+                
+                
+                            cell.value="";
+                
+                            cell.dataset.answer=value;
+                
+                            cell.maxLength=2;
+                
+                            cell.placeholder="??";
+                
+                
+                        }
+                        else{
+                
+                
+                            cell.value=value;
+cell.disabled=true;
+cell.classList.add("locked");
+                
+                
+                        }
+                
+                
+                        grid.appendChild(cell);
+                
+                
+                    });
+                
+                
+                }
 
 
-const grid =
-document.getElementById("memory-grid");
 
 
-grid.innerHTML="";
-
-
-memoryLevelData.solution
-.forEach((value,index)=>{
-
-
-let cell=document.createElement("div");
-
-
-cell.className="memory-cell";
-
-
-if(memoryLevelData.hidden.includes(index)){
-
-
-    cell.innerHTML="❓";
-
-    cell.dataset.value="";
-
-    cell.dataset.answer=value;
-
-    cell.onclick=()=>selectCell(cell);
-
-
-}
-
-else{
-
-    cell.innerHTML=value;
-
-}
-
-
-grid.appendChild(cell);
-
-
-});
-
-
-createFragments();
-
-
-}
-function selectCell(cell){
-
-
-    document
-    .querySelectorAll(".memory-cell")
-    .forEach(c=>{
-
-        c.classList.remove("selected");
-
-    });
-
-
-    selectedCell=cell;
-
-
-    cell.classList.add("selected");
-
-
-}
-
-
-
-
-function createFragments(){
-
-    let zone=document.getElementById("fragments");
-
-    zone.innerHTML="";
-
-
-    let values=[
-
-        "72",
-        "6F",
-        "B2"
-
-    ];
-
-
-    values.forEach(v=>{
-
-
-        let f=document.createElement("button");
-
-        f.className="fragment";
-
-        f.innerText=v;
-
-
-        f.onclick=()=>{
-
-
-            if(selectedCell){
-
-
-                selectedCell.innerText=v;
-
-selectedCell.dataset.value=v;
-
-
-selectedCell.classList.remove("selected");
-
-
-selectedCell.classList.add("filled");
-
-
-selectedCell=null;
-
-
-            }
-
-
-        };
-
-
-        zone.appendChild(f);
-
-
-    });
-
-
-}
 
     
 function checkCore(){
 
+    let cells=document.querySelectorAll(".memory-cell");
 
-    let cells =
-    document.querySelectorAll(".memory-cell");
-    
-    
     let ok=true;
-    
-    
-    
+
+
     cells.forEach(c=>{
-    
-    
-    if(c.dataset.answer){
-    
-    
-    if(c.dataset.answer === c.dataset.value){
-    
-    
-    c.classList.add("correct");
-    
-    
-    }
-    else{
-    
-    
-    c.classList.add("wrong");
-    
-    ok=false;
-    
-    
-    }
-    
-    
-    }
-    
-    
+
+        if(c.dataset.answer){
+
+
+            if(c.value.toUpperCase() === c.dataset.answer){
+
+
+                c.classList.add("correct");
+                c.classList.remove("wrong");
+
+
+            }
+            else{
+
+
+                c.classList.add("wrong");
+                c.classList.remove("correct");
+
+                ok=false;
+
+            }
+
+
+        }
+
+
     });
-    
-    
-    
+
+
+
     if(ok){
-    
-    
-    setTimeout(()=>{
-    
-    
-    memoryCoreRestored();
-    
-    
-    },1000);
-    
-    
-    
+
+        setTimeout(()=>{
+
+            memoryCoreRestored();
+
+        },1000);
+
     }
-    
-    else{
-    
-    
-    alert("❌ Le noyau est encore corrompu. Les fragments rouges sont incorrects.");
-    
-    
-    }
-    
-    
-    }
-    
+
+
+}
 
     function showFinalReveal(){
 
