@@ -927,6 +927,11 @@ background:#2ecc71;
 
 }
 
+#transition-bar{
+    height:100%;
+    width:0%;
+    transition:width 0.05s linear;
+}
 
 .memory-cell.wrong{
 
@@ -1172,5 +1177,141 @@ animation:shake 0.3s;
         color:#aaa;
     
         border-color:#555;
+    
+    }
+
+    .memory-summary-card{
+
+        background:rgba(255,255,255,0.08);
+    
+        border-radius:20px;
+    
+        padding:30px;
+    
+        max-width:400px;
+    
+        margin:30px auto;
+    
+        text-align:center;
+    
+        animation:fade 0.4s;
+    
+    }
+    
+    
+    .memory-navigation{
+    
+        display:flex;
+    
+        justify-content:space-between;
+    
+        align-items:center;
+    
+        margin-top:25px;
+    
+    }
+    
+    
+    .memory-navigation button{
+    
+        border:none;
+    
+        background:#222;
+    
+        color:white;
+    
+        padding:10px 18px;
+    
+        border-radius:10px;
+    
+        cursor:pointer;
+    
+    }
+    
+    
+    @keyframes fade{
+    
+        from{
+            opacity:0;
+            transform:translateY(15px);
+        }
+    
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    
+    }
+
+    .final-card{
+
+        width:280px;
+        margin:20px auto;
+        text-align:center;
+    
+    }
+    
+    
+    .final-card img{
+    
+        width:250px;
+        height:250px;
+    
+        object-fit:contain;
+    
+        border-radius:15px;
+    
+    }
+    
+    
+    .final-card h2{
+    
+        font-size:1.2rem;
+    
+    }
+    
+    
+    .final-card p{
+    
+        font-size:0.9rem;
+    
+    }
+    
+    
+    
+    .heart-animation{
+    
+        font-size:50px;
+    
+        animation: heartbeat 1s infinite;
+    
+    }
+    
+    
+    
+    @keyframes heartbeat{
+    
+    
+        0%{
+            transform:scale(1);
+        }
+    
+    
+        50%{
+            transform:scale(1.25);
+        }
+    
+    
+        100%{
+            transform:scale(1);
+        }
+    
+    }
+    
+    
+    .final-message{
+    
+        font-size:1.1rem;
+        line-height:1.5;
     
     }

@@ -4,7 +4,10 @@ let neuronState=[];
 
 let selectedCell=null;
 const neuronCount=15;
+let autoCardTimer;
 
+let allCards = [];
+let finalCardIndex = 0;
 
 const neuronMap=[
 
@@ -585,7 +588,7 @@ function exitBrain(){
                 
                 <div class="progress-container">
                 
-                <div id="transition-bar"></div>
+                <div id="memory-progress"></div>
                 
                 </div>
                 
@@ -602,7 +605,7 @@ function exitBrain(){
                 
                 let progress=0;
                 
-                let bar=document.getElementById("transition-bar");
+                let bar=document.getElementById("memory-progress");
                 
                 
                 let timer=setInterval(()=>{
@@ -781,70 +784,131 @@ function checkCore(){
 
 }
 
-    function showFinalReveal(){
 
 
-        document.getElementById("brain-content").innerHTML=`
-        
-        <div class="final-reveal">
-        
-        
-        <div class="heart-animation">
-        ❤️
-        </div>
-        
-        
-        <h1>
-        Mémoire restaurée
-        </h1>
-        
-        
-        <p class="typing">
-        Une dernière information a été retrouvée...
-        </p>
-        
-        
-        <div class="secret-card">
-        
-        
-        <h2>
-        📅 Date parfaite
-        </h2>
-        
-        
-        <p>
-        Ce n'était pas un lieu.<br>
-        Ce n'était pas un moment précis.
-        </p>
-        
-        
-        <p>
-        C'était simplement...
-        </p>
-        
-        
-        <h2>
-        ❤️ Nous deux
-        </h2>
-        
-        
-        </div>
-        
-        
-        <button 
-        class="memory-button"
-        onclick="exitBrain()">
-        
-        Continuer ✨
-        
-        </button>
+function loadFinalCards(){
+
+    fetch("data/cards.json")
+    .then(response => response.json())
+    .then(data => {
+
+        allCards = data;
+
+        showFinalCard();
+
+    });
+
+}
+
+function showFinalCard(){
+
+
+    let card = allCards[currentCard];
+
+
+    document.getElementById("final-card-image").src =
+    card.image;
+
+
+    document.getElementById("final-card-title").innerText =
+    card.title;
+
+
+    document.getElementById("final-card-text").innerText =
+    card.text;
+
+
+    document.getElementById("card-counter").innerText =
+    `${currentCard+1} / ${allCards.length}`;
+
+
+}
+
+
+        function showFinalReveal(){
+
+
+            document.getElementById("brain-content").innerHTML = `
+            
+            <div class="final-reveal">
         
         
-        </div>
+            <div class="heart-animation">
+                ❤️
+            </div>
         
-        `;
+        
+            <h1>
+            🧠 Mémoire restaurée
+            </h1>
+        
+        
+            <p class="final-message">
+            Tous les souvenirs ont retrouvé leur place...<br>
+            Une journée parfaite, reconstruite morceau par morceau ❤️
+            </p>
+        
+        
+            <div class="final-card">
+        
+        
+                <img id="final-card-image">
+        
+        
+                <h2 id="final-card-title"></h2>
+        
+        
+                <p id="final-card-text"></p>
+        
+        
+            </div>
+        
+        
+            <p id="card-counter"></p>
+        
+        
+            <button 
+            class="memory-button"
+            onclick="exitBrain()">
+            
+            Terminer ✨
+        
+            </button>
+        
+        
+            </div>
+            
+            `;
+        
+        
+            currentCard=0;
+        
+            loadFinalCards();
+        
+        
+            autoCardTimer = setInterval(()=>{
+        
+        
+                if(currentCard < allCards.length-1){
+        
+        
+                    currentCard++;
+        
+                    showFinalCard();
+        
+        
+                }
+                else{
+        
+        
+                    clearInterval(autoCardTimer);
+        
+        
+                }
+        
+        
+            },1500);
+        
         
         
         }
-
-    
