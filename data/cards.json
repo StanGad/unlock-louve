@@ -2,28 +2,28 @@
     {
     "id":"1",
     "title":"?",
-    "text":"Tu fais quoi ici ??",
+    "text":"Trompé de numéro ?? Rien à faire ici, madame !",
     "image":"assets/images/envelope.png"
     },
     
     {
         "id":"4",
         "title":"Carte 4",
-        "text":"Ahhhh bha d'accord on en est là..., et il a le compte de Louve Wargnier en plus, etrange... ",
+        "text":"Ahhhh, bah d'accord... On en est là... Et il a le compte de Louve en plus ? Étrange... Il faudrait peut-être regarder les profils dans l'ordre et choisir le bon ?",
         "image":"assets/images/4.png"
         },
     
     {
         "id":"6",
         "title":"Carte 6",
-        "text":"Bon bon bon, on se dpnne rdv au pingpong donc ?? ",
+        "text":"On se donne rendez-vous au bar à ping-pong ?? Mais c'est où ?",
         "image":"assets/images/6.png"
         },
     
     {
         "id":"7",
         "title":"Carte 7",
-        "text":"Il sembla avoir faim mais ou manger ? ",
+        "text":"Oh, monsieur semble ne penser qu'à manger. Il doit sûrement y avoir un restaurant sympa dans le quartier...",
         "image":"assets/images/7.png"
         },
 
@@ -31,7 +31,7 @@
     {
         "id":"8",
         "title":"Carte 8",
-        "text":"Oh ca semble fonctionner, on aprpfjce d ela fin non ? ",
+        "text":"Oh, ça semble fonctionner ! On approche de la fin, je pense.",
         "image":"assets/images/8.png"
         },
  
@@ -39,21 +39,21 @@
     {
         "id":"9",
         "title":"Carte 9",
-        "text":"Argh quel est son mot de passe deja ??",
+        "text":"Argh... Quel est son mot de passe déjà ??",
         "image":"assets/images/9.png"
         },
     
     {
         "id":"13",
         "title":"Carte 13",
-        "text":"Mais où dans le 13 ??",
+        "text":"Mais où ça, dans le 13 ??",
         "image":"assets/images/13.png"
         },
     
     {
         "id":"21",
         "title":"Carte 21",
-        "text":"Ah bon deuxiemen date au petit coco",
+        "text":"Ah, finalement quand même un deuxième au Petit Coco ! Qui l'eût cru ?",
         "image":"assets/images/21.png"
         },
     
@@ -102,7 +102,7 @@
     {
         "id":"30",
         "title":"Carte 30",
-        "text":"Monsieur semble commencer à retrouver la memoire",
+        "text":"Il semble commencer à retrouver la mémoire.",
         "image":"assets/images/30.png"
         },
         
@@ -134,35 +134,35 @@
     {
         "id":"36",
         "title":"Carte 36",
-        "text":"Sympa le profil non ???",
+        "text":"Sympa le profil, non ???",
         "image":"assets/images/36.png"
         },
     
     {
         "id":"38",
         "title":"Carte 38",
-        "text":"Bah alors madame ???",
+        "text":"Bah alors, madame ???",
         "image":"assets/images/38.png"
         },
     
     {
         "id":"42",
         "title":"Carte 42",
-        "text":"Mouais pas foufou",
+        "text":"Mouais... Pas foufou, ce banc. Il ne retrouve pas les souvenirs.",
         "image":"assets/images/42.png"
         },
     
     {
         "id":"43",
         "title":"Carte 43",
-        "text":"Mouais pas foufou",
+        "text":"Mouais... Pas foufou, ce banc. Il ne retrouve pas les souvenirs.",
         "image":"assets/images/43.png"
         },
     
     {
         "id":"44",
         "title":"Carte 44",
-        "text":"Le date c'est bien passé, est ce que Monsieur à envoyer un message ??",
+        "text":"Le date s'est bien passé, mais est-ce que monsieur a envoyé un message ??",
         "image":"assets/images/44.png"
         },
     
@@ -176,84 +176,84 @@
     {
         "id":"100",
         "title":"Carte 100",
-        "text":"Ah elle veut monter mais elle ne sait pas à quel etage ?",
+        "text":"Madame veut monter, mais il ne sait pas à quel étage ?",
         "image":"assets/images/100.png"
         },
     
     {
         "id":"101",
         "title":"Carte 101",
-        "text":"Ah super bar ca... il faut peut etre passer à un ednroit ou l'on peut se tenri la main ?",
+        "text":"Ah, super bar, ça... Il faut peut-être retourner à l'endroit où l'on peut peut-être se tenir la main",
         "image":"assets/images/101.png"
         },
     
     {
         "id":"102",
         "title":"Carte 102",
-        "text":"Aie Aie Aie",
+        "text":"Aie Aie Aie, Snif.",
         "image":"assets/images/102.png"
         },
     
     {
         "id":"103",
         "title":"Carte 103",
-        "text":"Rien à voir",
+        "text":"Rien à voir ici.",
         "image":"assets/images/103.png"
         },
     
     {
         "id":"104",
         "title":"Carte 104",
-        "text":"Bon meme pas un etit bisous ?? Non ... bon combien de bise ?",
+        "text":"Bon... Même pas un petit bisou ?? Non... Bon, alors combien de bises ?",
         "image":"assets/images/104.png"
         },
     
     {
         "id":"105",
         "title":"Carte 105",
-        "text":"Bonne idee mais quel menu prend il avec 5 sushi en + ?",
+        "text":"Ah, bonne idée de restaurant ! Mais quel menu prend-il déjà ? Et il veut rajouter 5 sushis en plus, on dirait.",
         "image":"assets/images/105.png"
         },
     
     {
         "id":"106",
         "title":"Carte 106",
-        "text":"Secra difference de niveau, l'ecart est enorme?",
+        "text":"Sacrée différence de niveau ! L'écart est énorme.",
         "image":"assets/images/106.png"
         },
 
     {
         "id":"107",
         "title":"Carte 107",
-        "text":"Quel bel endroit, mais ou ponvosn nous nous assoir ??",
+        "text":"Quel bel endroit ! Mais où pouvons-nous nous asseoir ?",
         "image":"assets/images/107.png"
         },
     
     {
         "id":"108",
         "title":"Carte 108",
-        "text":"Bon c'est finalemnt Monsieur qui prefer prendre son temps...",
+        "text":"Bon, c'est finalement monsieur qui préfère prendre son temps...",
         "image":"assets/images/108.png"
         },
     
     {
         "id":"109",
         "title":"Carte 109",
-        "text":"Sympa l'endroit non ?? ;)",
+        "text":"Sympa l'endroit, non ?? ;)",
         "image":"assets/images/109.png"
         },
 
     {
         "id":"19952811",
         "title":"Carte 19952811",
-        "text":"Etranges ces appplilcations...",
+        "text":"Étranges, ces applications... Il y en a une qui sort du lot. C'est la combientième déjà ?",
         "image":"assets/images/19952811.png"
         },
 
     {
         "id":"1234",
         "title":"Carte 1234",
-        "text":"Oh vous voici ici, il me semble que son telephoen a du tomber...",
+        "text":"Oh, vous voici ici ! Il me semble que son téléphone a dû tomber...",
         "image":"assets/images/1234.png"
         }
     
