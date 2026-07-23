@@ -39,8 +39,8 @@ const memoryLevelData = {
 solution:[
 
 "A6","D3","E3","B9",
-"B2","E2","9U","L4",
-"C1","F2","2D","B3"
+"B2","E2","U9","L4",
+"C1","F2","D2","B3"
 
 ],
 
